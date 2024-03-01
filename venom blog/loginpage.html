@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #login-page{
+            border: solid gray px;
+            box-shadow: 2px 2px 15px gray;
+            width: 450px;
+            height: 470px;
+           
+            
+        }
+
+        #signinpage{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 65px;
+        }
+
+        #signinheading{
+            text-align: center;
+            margin-top: 40px;
+            font-size: 25px;
+        }
+
+        #formsignin{
+
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           margin-top: 40px;
+        }
+
+        label{
+            color: rgb(87, 38, 107);
+        }
+
+        #email{
+            width: 300px;
+            height: 30px;
+            padding: 20px;
+            border: solid gray 0px;
+            box-shadow: 2px 2px 15px gray;
+            
+        }
+
+        #password{
+            width: 300px;
+            height: 30px;
+            padding: 20px;
+            border: solid gray 0px;
+            box-shadow: 2px 2px 15px gray;
+            
+        }
+
+        #forgotpassword{
+            padding-left: 80px;
+            text-decoration: none;
+        }
+
+        #buttonsignin{
+            background-color:rgb(87, 38, 107) ;
+            color: aliceblue;
+            width: 200px;
+            height: 30px;
+            border: solid gray 0px;
+            box-shadow: 2px 2px 15px gray;
+            border-radius: 10px;
+            margin-left: 55px;
+            margin-top: 20px;
+
+            
+        }
+
+        #parasign{
+            padding-top: 25px;
+            padding-left: 58px;
+
+        }
+        #parasign a{
+            text-decoration: none;
+            color: rgb(87, 38, 107);
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <!-- header section starts here -->
+
+    <header>
+        <div  class="logos" >
+            <a id="venomlogo" href="/index.html">Ve<span>nom</span></a>
+        </div>
+        <div  id="logosid" class="logos" >
+            <a id="loginlogo" href="/loginpage.html"  >Sign in</a>
+            <a href="/signup.html" id="signuplogo" >Sign Up</a>
+        </div>
+    </header>
+
+
+    <!-- header section ends here -->
+
+    
+    <section id="signinpage">
+        <div id="login-page">
+            <h3 id="signinheading">Sign in</h3>
+            <div  id="formsignin">
+                <form action="" >
+                    <label for="email">E-mail</label><br><br>
+                    <input type="email" id="email" placeholder="Enter your Email"><br><br>
+                    <label for="password">Password</label><br><br>
+                    <input type="password" id="password" placeholder="Enter your Password"><br><br><br>
+                    <input type="checkbox" name="remember me" id=""> remember me 
+                    <a href="#" id="forgotpassword">Forgot Password?</a><br>
+                    <button type="button" id="buttonsignin">SIGN IN</button><br>
+                    <p id="parasign">Don't have an account? <a href="/signup.html">Create</a></p>
+                    
+                    
+                </form>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
